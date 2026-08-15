@@ -1,0 +1,377 @@
+/* --- CSS RESET & VARIABLES --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-blue: #0056b3; /* Bright Blue from flyer */
+    --navy-blue: #001a35; /* Dark Navy from flyer */
+    --text-dark: #333333;
+    --text-light: #666666;
+    --bg-light: #f4f7f6;
+    --white: #ffffff;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: var(--text-dark);
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.section-padding {
+    padding: 80px 0;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.section-title h2 {
+    font-size: 2.5rem;
+    color: var(--navy-blue);
+    margin-bottom: 10px;
+    font-weight: 800;
+}
+
+/* --- BUTTONS --- */
+.btn {
+    display: inline-block;
+    padding: 14px 32px;
+    border-radius: 5px;
+    font-weight: 700;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    border: none;
+    letter-spacing: 1px;
+}
+
+.btn-primary {
+    background: var(--primary-blue);
+    color: var(--white);
+}
+
+.btn-primary:hover {
+    background: var(--navy-blue);
+}
+
+.btn-secondary {
+    background: var(--white);
+    color: var(--navy-blue);
+}
+
+.btn-secondary:hover {
+    background: #e0e0e0;
+}
+
+/* --- NAVBAR --- */
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 12px; /* Adds perfect spacing between the image and the text */
+}
+
+.nav-logo {
+    height: 55px; /* Keeps the tap icon at a clean, professional size */
+    width: auto;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 90px;
+}
+
+.logo h2 {
+    color: var(--navy-blue);
+    font-weight: 800;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+}
+
+.logo span {
+    color: var(--primary-blue);
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li {
+    margin-left: 30px;
+}
+
+.nav-links a {
+    color: var(--navy-blue);
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: var(--primary-blue);
+}
+
+/* --- HERO SECTION --- */
+.hero {
+    height: 100vh;
+    background: url('https://images.unsplash.com/photo-1584622650111-993a426fbf0a?q=80&w=2070&auto=format&fit=crop') center/cover no-repeat;
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-top: 90px;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 26, 53, 0.85); /* Navy Blue Overlay */
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+    max-width: 800px;
+    color: var(--white);
+    text-align: center;
+    margin: 0 auto;
+}
+
+.hero-content h1 {
+    font-size: 4rem;
+    line-height: 1.1;
+    margin-bottom: 20px;
+    font-weight: 800;
+}
+
+.hero-content p {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+    font-weight: 300;
+}
+
+.hero-content .service-areas {
+    font-size: 1.1rem;
+    color: var(--primary-blue);
+    font-weight: 700;
+    margin-bottom: 40px;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+/* --- STATS SECTION --- */
+.stats-section {
+    background: var(--bg-light);
+    border-bottom: 2px solid #e0e0e0;
+}
+
+.stats-grid {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+    gap: 30px;
+}
+
+.stat-item h3 {
+    font-size: 3.5rem;
+    color: var(--primary-blue);
+    font-weight: 800;
+    line-height: 1.2;
+}
+
+.stat-item p {
+    font-size: 1.1rem;
+    color: var(--text-light);
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* --- SERVICES GRID --- */
+.services {
+    background: var(--bg-light);
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* This strictly forces 3 equal columns */
+    gap: 30px;
+}
+
+.service-card {
+    background: var(--white);
+    border-radius: 10px;
+    overflow: hidden; /* Ensures the image stays inside the rounded corners */
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-bottom: 5px solid var(--primary-blue);
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 40px rgba(0,0,0,0.12);
+}
+
+.service-img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover; /* Prevents images from stretching weirdly */
+}
+
+.service-text {
+    padding: 30px;
+}
+
+.service-text h3 {
+    margin-bottom: 15px;
+    color: var(--navy-blue);
+    font-weight: 700;
+}
+
+.service-text p {
+    color: var(--text-light);
+}
+
+/* --- FADE IN ANIMATIONS --- */
+.fade-in {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.fade-in.appear {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* --- CONTACT SECTION --- */
+.contact-info-bar {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-bottom: 40px;
+    font-size: 1.2rem;
+    color: var(--navy-blue);
+}
+
+.form-container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 2px solid #e0e0e0;
+    border-radius: 5px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    background: var(--bg-light);
+}
+
+form input:focus, form textarea:focus {
+    outline: none;
+    border-color: var(--primary-blue);
+}
+
+/* --- FOOTER --- */
+.footer {
+    background: var(--navy-blue);
+    color: var(--white);
+    text-align: center;
+    padding: 40px 0;
+}
+
+/* --- RESPONSIVE DESIGN --- */
+@media (max-width: 768px) {
+    .stats-grid {
+        flex-direction: column;
+        gap: 40px;
+    }
+    
+    .services-grid {
+        grid-template-columns: 1fr; /* Stacks cards vertically on phones */
+    }
+    
+    .nav-links, .mobile-hide {
+        display: none;
+    }
+    
+    .nav-logo {
+        height: 50px;
+    }
+
+    .hero {
+        margin-top: 70px;
+    }
+
+    .hero-content h1 {
+        font-size: 2.4rem;
+    }
+    
+    .hero-content p {
+        font-size: 1.1rem;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        width: 100%;
+        padding: 0 20px;
+    }
+
+    .hero-buttons .btn {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .contact-info-bar {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+        font-size: 1rem;
+    }
+    
+    .cert-container {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .cert-image {
+        text-align: center;
+        margin-top: 20px;
+    }
+    
+    .section-padding {
+        padding: 50px 0;
+    }
+}

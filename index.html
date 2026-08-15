@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hilton's Plumbers | Reliable Plumbing Services</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <!-- This line is what connects the design. Make sure style.css is in the same folder! -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigation Bar so tiresome-->
+    <header class="navbar" style="height: 90px; display: flex; align-items: center; background: #ffffff; width: 100%; position: fixed; top: 0; z-index: 100; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
+        <div class="container" style="display: flex; justify-content: space-between; align-items: center; width: 100%;">
+            
+            <!-- 1. Left Side: Logo -->
+            <div class="logo">
+                <a href="#home" style="display: flex; align-items: center; gap: 12px; text-decoration: none;">
+                    <img src="logo.png" alt="Tap logo" style="height: 50px; width: auto;">
+                    <h2 style="margin: 0; color: #001a35; font-size: 1.8rem; font-weight: 800; text-transform: uppercase;">Hilton's <span style="color: #0056b3;">Plumbers</span></h2>
+                </a>
+            </div>
+
+            <!-- 2. Middle: Navigation Links -->
+            <nav class="mobile-hide">
+                <ul class="nav-links" style="display: flex; gap: 30px; list-style: none; margin: 0; padding: 0;">
+                    <li><a href="#home" style="color: #001a35; font-weight: 600; text-decoration: none;">Home</a></li>
+                    <li><a href="#services" style="color: #001a35; font-weight: 600; text-decoration: none;">Services</a></li>
+                    <li><a href="#contact" style="color: #001a35; font-weight: 600; text-decoration: none;">Contact</a></li>
+                </ul>
+            </nav>
+
+            <!-- 3. Right Side: Call Button -->
+            <a href="tel:0787461536" class="btn btn-primary mobile-hide">Call: 078 7461 536</a>
+            
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section id="home" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+            <h1>Reliable Plumbing Services</h1>
+            <p>Quality Work • Honest Service • Affordable Rates</p>
+            <p class="service-areas">Serving Uitenhage, Despatch, and Gqeberha</p>
+            <div class="hero-buttons">
+                <a href="tel:0787461536" class="btn btn-primary">Emergency Call-Out</a>
+                <a href="#contact" class="btn btn-secondary">Get a Quote</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- STATS / TRUST BAR SECTION -->
+    <section class="stats-section section-padding fade-in">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <h3><span class="counter" data-target="26">0</span>+</h3>
+                    <p>Years Experience</p>
+                </div>
+                <div class="stat-item">
+                    <h3><span class="counter" data-target="1000">0</span>+</h3>
+                    <p>Customers Helped</p>
+                </div>
+                <div class="stat-item">
+                    <h3>24/7</h3>
+                    <p>Support Available</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service this is the service section oyama remember that and refine -->
+    <section id="services" class="services section-padding">
+       <div class="section-title fade-in">
+                <p style="max-width: 750px; margin: 0 auto 20px auto; font-size: 1.1rem; color: #666666; line-height: 1.8;">Dedicated to providing reliable, professional plumbing solutions that keep your home or business running smoothly, with quality workmanship and dependable service you can trust.</p>
+                <h2>Our Services</h2>
+                <p>Licensed, Professional, and Fully Certified.</p>
+                
+                <!-- WACC Certificate Featured Image -->
+                <div style="text-align: center; margin-top: 30px; margin-bottom: 20px;">
+                    <img src="Hilton_Certificate.png" alt="Official WACC Certification for Hilton Kotze" style="max-width: 100%; width: 450px; border-radius: 12px; box-shadow: 0 8px 25px rgba(0,0,0,0.15);">
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="services-grid">
+                    
+                    <div class="service-card fade-in">
+                        <img src="https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?q=80&w=600&auto=format&fit=crop" alt="Certificates of Compliance" class="service-img">
+                        <div class="service-text">
+                            <h3>Certificates of Compliance</h3>
+                            <p>Fully authorized to issue COCs for all general plumbing, solar, and heat pump installations.</p>
+                        </div>
+                    </div>
+
+                    <div class="service-card fade-in">
+                        <img src="hilton geyser.png" alt="Hilton installing an outdoor wall-mounted geyser" class="service-img">
+                        <div class="service-text">
+                            <h3>Geyser & Leak Services</h3>
+                            <p>Geyser installations, repairs, and advanced leak detection for your property.</p>
+                        </div>
+                    </div>
+
+                    <div class="service-card fade-in">
+                        <img src="solar_panel.png" alt="Installation of solar panels on a tile roof" class="service-img">
+                        <div class="service-text">
+                            <h3>Solar & Heat Pumps</h3>
+                            <p>Professional installation of solar water heating systems and energy-efficient heat pumps.</p>
+                        </div>
+                    </div>
+
+                    <div class="service-card fade-in">
+                        <img src="hilton working.png" alt="Hilton working on copper pipes for repairs and maintenance" class="service-img">
+                        <div class="service-text">
+                            <h3>Repairs & Maintenance</h3>
+                            <p>General plumbing maintenance, including toilet, tap repairs, and system upgrades.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="service-card fade-in">
+                        <img src="Hilton Thumbs Up.png" alt="Hilton giving a thumbs up after a successful plumbing inspection" class="service-img">
+                        <div class="service-text">
+                            <h3>General Inspections</h3>
+                            <p>Comprehensive plumbing inspections to ensure your property is fully compliant and safe.</p>
+                        </div>
+                    </div>
+
+                    <div class="service-card fade-in">
+                        <img src="pexels-sejio402-27354191.jpg" alt="Worker repairing a large underground pipe" class="service-img">
+                        <div class="service-text">
+                            <h3>Drain Cleaning</h3>
+                            <p>Fast and effective drain cleaning to keep your systems flowing smoothly.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="contact section-padding">
+        <div class="container">
+            <div class="section-title">
+                <h2>Contact Us</h2>
+                <p>Your trusted local plumbing experts.</p>
+            </div>
+            
+            <div class="contact-info-bar">
+                <p><strong>Phone:</strong> 078 7461 536</p>
+                <p><strong>Email:</strong> hiltonplumbers1406@gmail.com</p>
+            </div>
+
+            <div class="form-container">
+                <form action="mail.php" method="POST">
+                    <input type="text" name="fname" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="message" rows="5" placeholder="How can we help you?" required></textarea>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Hilton's Plumbers. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- External JavaScript -->
+    <script src="script.js"></script>
+
+    <!-- FLOATING WHATSAPP BUTTON -->
+    <a href="https://wa.me/27787461536?text=Hi%20Hilton's%20Plumbers,%20I%20need%20some%20assistance." target="_blank" style="position: fixed; bottom: 30px; right: 30px; width: 60px; height: 60px; background-color: #25D366; border-radius: 50px; display: flex; align-items: center; justify-content: center; box-shadow: 2px 2px 10px rgba(0,0,0,0.3); z-index: 9999; text-decoration: none; transition: transform 0.3s ease;" onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" style="width: 35px; height: 35px;">
+    </a>
+</body>
+</html>
