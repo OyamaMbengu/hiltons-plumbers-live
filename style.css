@@ -314,61 +314,87 @@ form input:focus, form textarea:focus {
 
 /* --- RESPONSIVE DESIGN --- */
 @media (max-width: 768px) {
-    .stats-grid {
-        flex-direction: column;
-        gap: 40px;
+    /* 1. Header Fix: Override the inline HTML styles to shrink logo and text */
+    .navbar {
+        height: 70px !important;
     }
-    
-    .services-grid {
-        grid-template-columns: 1fr; /* Stacks cards vertically on phones */
+    .logo h2 {
+        font-size: 1.2rem !important;
     }
-    
-    .nav-links, .mobile-hide {
-        display: none;
+    .logo img {
+        height: 35px !important;
     }
-    
-    .nav-logo {
-        height: 50px;
+    .logo a {
+        gap: 8px !important;
     }
 
+    /* 2. Stats Fix: Side-by-side layout instead of stacked */
+    .stats-grid {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+    .stat-item {
+        flex: 1 1 30%;
+        min-width: 90px;
+    }
+    .stat-item h3 {
+        font-size: 1.8rem;
+    }
+    .stat-item p {
+        font-size: 0.75rem;
+    }
+    
+    /* 3. Services Fix: 2 columns, smaller cards so more fit on screen */
+    .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+    .service-img {
+        height: 120px;
+    }
+    .service-text {
+        padding: 12px;
+    }
+    .service-text h3 {
+        font-size: 0.95rem;
+        margin-bottom: 5px;
+    }
+    .service-text p {
+        font-size: 0.75rem;
+        line-height: 1.4;
+    }
+    
+    /* Standard Mobile Adjustments */
+    .nav-links, .mobile-hide {
+        display: none !important; 
+    }
+    
     .hero {
         margin-top: 70px;
     }
-
     .hero-content h1 {
-        font-size: 2.4rem;
+        font-size: 2.2rem;
+    }
+    .hero-content p {
+        font-size: 1rem;
     }
     
-    .hero-content p {
-        font-size: 1.1rem;
-    }
-
     .hero-buttons {
         flex-direction: column;
         width: 100%;
         padding: 0 20px;
     }
-
     .hero-buttons .btn {
         width: 100%;
         margin-bottom: 10px;
     }
-
+    
     .contact-info-bar {
         flex-direction: column;
         text-align: center;
         gap: 10px;
         font-size: 1rem;
-    }
-    
-    .cert-container {
-        flex-direction: column;
-        text-align: center;
-    }
-    
-    .cert-image {
-        text-align: center;
-        margin-top: 20px;
     }
     
     .section-padding {
